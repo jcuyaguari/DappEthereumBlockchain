@@ -5,6 +5,10 @@ contract RegistroContract {
 
     uint public registroCounter = 0;
 
+    constructor () public{
+        createRegistro("Juan Carlos","199887699");
+    }
+
     struct Registro{
         uint id;
         string titulo;

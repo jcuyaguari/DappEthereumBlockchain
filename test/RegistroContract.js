@@ -15,6 +15,9 @@ contract("RegistroContract",()=>{
     })
 
     it('get Registros List', async()=>{
-        const registroCounter = this.registroContract.registroCounter()
+        const registroCounter = await this.registroContract.registroCounter()
+        const register = this.registroContract.registros(registroCounter)
+
+        assert.equal(register.id.toNumber(),registroCounter-1)
     })
 })

@@ -1,0 +1,11 @@
+{
+    "server":{
+        "baseDir":[
+            "./front"
+        ],
+        "routes":{
+            "/libs" : "./node_modules"
+        }
+    },
+    "port":"2424"
+}

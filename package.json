@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "lite-server": "^2.6.1"
+  },
+  "name": "dappethereumblockchain",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcuyaguari/DappEthereumBlockchain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcuyaguari/DappEthereumBlockchain/issues"
+  },
+  "homepage": "https://github.com/jcuyaguari/DappEthereumBlockchain#readme",
+  "description": ""
+}

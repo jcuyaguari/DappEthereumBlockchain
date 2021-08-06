@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@truffle/contract": "^4.3.27",
     "bootstrap": "^5.1.0",
     "lite-server": "^2.6.1"
   },

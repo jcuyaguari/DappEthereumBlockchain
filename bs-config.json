@@ -1,7 +1,8 @@
 {
     "server":{
         "baseDir":[
-            "./front"
+            "./front",
+            "./build/contracts"
         ],
         "routes":{
             "/libs" : "./node_modules"

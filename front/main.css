@@ -2,3 +2,8 @@ body{
     background-color: #15354e;
     color: aliceblue;
 }
+
+input{
+    border-color: aliceblue;
+    border-style: groove;
+}

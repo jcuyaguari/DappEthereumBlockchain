@@ -18,9 +18,11 @@
             <div class="col-md-5">
                 <div class="card bg-warning">
                     <h6 class="text-muted text-center">App Descentralizada</h6>
-                    <strong>Billetera: <span class="text-black">.MetaMask.</span> <a id="balance"><strong> ETH</strong> </a> </strong>
+                    <strong>Billetera: <span class="text-black">.MetaMask.</span> <a id="balance">ETH <strong id="eth" class="text-black"></strong> </a> </strong>
                     
                     <strong>Account: <span id="account" class="fs-6 text-black"></span></strong>
+                    <strong>Gas: <span id="gas" class="fs-6 text-black"></span></strong>
+                    <strong>Bloque: <span id="bloque" class="fs-6 text-black"></span></strong>
                 </div>
                 <form class="card card-body bg-dark text-white" id="registroForm">
                     <h4>Guardar Contacto</h4>
@@ -41,7 +43,7 @@
 
     <!-- Script -->
     <script src="./libs/@truffle/contract/dist/truffle-contract.min.js"></script>
-    <script src="./libs/web3"></script>
+    <script src="./libs/web3/dist/web3.min.js"></script>
     <script src="./app.js"></script>
     <script src="./ui.js"></script>
 </body>

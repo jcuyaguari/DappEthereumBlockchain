@@ -28,7 +28,15 @@ App = {
     //Carga la cuenta del usuario
     loadCuentaUsuario:async()=>{
         const cuentaUser = await window.ethereum.request({method:'eth_requestAccounts'})
-        console.log(cuentaUser)
+        var web3 = new Web3(window.web3.currentProvider)
+        let ether = await web3.eth.getBalance(cuentaUser[0])
+        let balance = await web3.utils.fromWei(ether.toString(),'ether')
+        document.getElementById('eth').innerText = balance;
+        let gasPrice = await web3.eth.getGasPrice();
+        document.getElementById('gas').innerText = gasPrice;
+        let bloque = await web3.eth.getBlockNumber();
+        document.getElementById('bloque').innerText = bloque;
+        console.log(cuentaUser,'??',balance,gasPrice,bloque)
         App.account = cuentaUser[0]
     },
     //Cargar Contratos

@@ -11,14 +11,14 @@
 <body>
     <div class="container py-5">
         <div>
-            <h1 class="text-center text-muted"><strong>REGISTRO</strong> AGENDA TELEFÓNICA DE PERSONAS</h1>>
+            <h1 class="text-center text-muted"><strong>REGISTRO</strong> AGENDA <strong>TELEFÓNICA</strong> DE PERSONAS</h1>
         </div>
         
         <div class="row">
             <div class="col-md-5">
                 <div class="card bg-warning">
                     <h6 class="text-muted text-center">App Descentralizada</h6>
-                    <strong>Billetera: <span class="text-black">.MetaMask.</span></strong>
+                    <strong>Billetera: <span class="text-black">.MetaMask.</span> <a id="balance"><strong> ETH</strong> </a> </strong>
                     
                     <strong>Account: <span id="account" class="fs-6 text-black"></span></strong>
                 </div>
@@ -31,7 +31,7 @@
                     <button class="btn btn-primary">Guardar</button>
                 </form>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 card bg-dark">
                 <div id="registroList">
                     
                 </div>
@@ -41,6 +41,7 @@
 
     <!-- Script -->
     <script src="./libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+    <script src="./libs/web3"></script>
     <script src="./app.js"></script>
     <script src="./ui.js"></script>
 </body>

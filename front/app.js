@@ -80,7 +80,7 @@ App = {
 
             let registroElement = 
             `
-                <div class="card-header bg-dark border-white" rounded-0 mt-1" >
+                <li class="card-header bg-dark border-white" rounded-0 mt-1" >
                     <span>${id}</span>
                     <div className="card-header d-flex form-check-inline">
                         <span>${titulo}</span>
@@ -97,7 +97,7 @@ App = {
                         <p class="text-muted">Registro Creado ${new Date(fecha * 1000)}</p>
                     </div>
                     
-                </div>
+                </li>
             `
             html += registroElement;
         }

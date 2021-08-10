@@ -1,5 +1,7 @@
 const registroForm = document.getElementById("registroForm")
 const search = document.getElementById("search")
+const li = document.getElementsByTagName("li")
+
 let caracter = [];
 registroForm.addEventListener("submit",e =>{
     e.preventDefault()
@@ -7,13 +9,16 @@ registroForm.addEventListener("submit",e =>{
     App.crearRegistro(registroForm['nombre'].value,registroForm['numero'].value);
 });
 
-search.addEventListener("keyup",e=>{
 
+search.addEventListener("keyup",e=>{
     const search = e.target.value
     console.log(search)
-    const filC = caracter.filter((character)=>{
-        console.log(filC)
-       return character.name.includes(search) || character.house.includes(search)
-    });
-    console.log('Champion',filC)
-})
+    for (i = 0; i < li.length; i++) {
+        if (!li[i].innerHTML.toLowerCase().includes(search)) {
+            li[i].style.display="none";
+        }
+        else {
+            li[i].style.display="list-item";                 
+        }
+    }
+});

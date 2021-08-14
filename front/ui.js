@@ -11,10 +11,11 @@ registroForm.addEventListener("submit",e =>{
 
 
 search.addEventListener("keyup",e=>{
+    e.preventDefault()
     const search = e.target.value
     console.log(search)
     for (i = 0; i < li.length; i++) {
-        if (!li[i].innerHTML.toLowerCase().includes(search)) {
+        if (!li[i].innerHTML.toLowerCase().includes(search) && !li[i].innerHTML.toUpperCase().includes(search)) {
             li[i].style.display="none";
         }
         else {

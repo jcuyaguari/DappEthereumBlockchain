@@ -91,7 +91,7 @@ App = {
                     </div>
                     <div class="card-body bg-dark mt-1" >
                         <p class="text-muted "><span> Número Telf: ${descripcion}</span></p>
-                        <p class="text-muted "><span> Estado Guardado Block: ${estado}</span></p>
+                        <p class="text-muted "><span> Número local: ${estado}</span></p>
                     </div>
                     <div class="card-footer bg-transparent border-warning">
                         <p class="text-muted">Registro Creado ${new Date(fecha * 1000)}</p>
@@ -107,6 +107,7 @@ App = {
     crearRegistro: async (nombre, descripcion)=>{
         const resultado = await App.registrosContract.createRegistro(nombre,descripcion,{from:App.account})//pide a metamask la cuenta para guardar.
         //console.log(resultado.logs[0].args)
+        window.location.reload();
     },
 
     toggleEstado: async (obj)=>{

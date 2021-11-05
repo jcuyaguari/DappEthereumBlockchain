@@ -42,12 +42,13 @@ cmd> truffle init
 ## Use in cmd
 
 ```bash
+- truffle compile //Compila
 - truffle deploy //Despliega
-- truffle compile //Compila 
 - truffle test //Testea
 - truffle migrate //Guarda los nuevos cambios en la blockchain
 - truffle console //Abre una consola
 - truffle --reset //reset el despliegue
+- truffle deploy --reset --network development //reset la red
 ```
 ## Use
 ```bash
